@@ -47,14 +47,14 @@ define(
 			,"Services"
 			,"Hide {0}"
 			,"Hide Others"
-			,"Show All"
-			,"Quit {0}"
-			,"&&New File"
-			,"&&New File"
-			,"&&Open..."
-			,"&&Open..."
-			,"Open Wor&&kspace..."
-			,"Open Wor&&kspace..."
+			,"Ukázat Vše"/*,"Show All"*/
+			,"Odejit {0}"/*,"Quit {0}"*/
+			,"Nový Soubor"/*,"&&New File"*/
+			,"Nový Soubor"/*,"&&New File"*/
+			,"Otevřít..."/*,"&&Open..."*/
+			,"Otevřít..."/*,"&&Open..."*/
+			,"Otevřít Pracovní Prostor..."/*,"Open Wor&&kspace..."*/
+			,"Otevřít Pracovní Prostor..."/*,"Open Wor&&kspace..."*/
 			,"Open &&Folder..."
 			,"Open &&Folder..."
 			,"&&Open File..."
@@ -63,7 +63,7 @@ define(
 			,"Save Workspace As..."
 			,"A&&dd Folder to Workspace..."
 			,"&&Save"
-			,"Uložit Jako"/*,"Save &&As..."*/
+			,"Uložit Jako..."/*,"Save &&As..."*/
 			,"Save A&&ll"
 			,"Auto Save"
 			,"New &&Window"
@@ -78,22 +78,85 @@ define(
 			,"&&Keymap Extensions"
 			,"User &&Snippets"
 			,"&&Color Theme"
-			,"File &&Icon Theme","&&Preferences","&&Reopen Closed Editor","&&More...","&&Clear Recently Opened","&&Undo","&&Redo","Cu&&t","&&Copy","&&Paste","&&Undo","&&Redo","Cu&&t","&&Copy","&&Paste"
-			,"&&Find","&&Replace","Find &&in Files","Replace &&in Files","Emmet: E&&xpand Abbreviation","E&&mmet...","&&Toggle Line Comment","Toggle &&Block Comment","Switch to Alt+Click for Multi-Cursor"
-			,"Switch to Cmd+Click for Multi-Cursor","Switch to Ctrl+Click for Multi-Cursor","&&Add Cursor Above","A&&dd Cursor Below","Add C&&ursors to Line Ends","Add &&Next Occurrence","Add P&&revious Occurrence"
-			,"Select All &&Occurrences","&&Copy Line Up","Co&&py Line Down","Mo&&ve Line Up","Move &&Line Down","&&Select All","&&Select All","&&Expand Selection","&&Shrink Selection","&&Explorer","&&Search","S&&CM","&&Debug"
-			,"E&&xtensions","&&Output","De&&bug Console","&&Integrated Terminal","&&Problems","&&Command Palette...","&&Open View...","Toggle &&Full Screen","Toggle Zen Mode","Toggle Centered Layout","Toggle Menu &&Bar"
-			,"Split &&Editor","Toggle Editor Group &&Layout","&&Toggle Side Bar","&&Move Side Bar Right","&&Move Side Bar Left","Toggle &&Panel","&&Hide Status Bar","&&Show Status Bar","Hide &&Activity Bar","Show &&Activity Bar"
-			,"Toggle &&Word Wrap","Toggle &&Minimap","Toggle &&Render Whitespace","Toggle &&Control Characters","&&Zoom In","Zoom O&&ut","&&Reset Zoom","&&Back","&&Forward","&&Next Editor","&&Previous Editor","&&Next Used Editor in Group"
-			,"&&Previous Used Editor in Group","Switch &&Editor","&&First Group","&&Second Group","&&Third Group","&&Next Group","&&Previous Group","Switch &&Group","Go to &&File...","Go to &&Symbol in File..."
-			,"Go to Symbol in &&Workspace...","Go to &&Definition","Go to &&Type Definition","Go to &&Implementation","Go to &&Line...","&&Start Debugging","Start &&Without Debugging","&&Stop Debugging","&&Restart Debugging"
-			,"Open &&Configurations","Add Configuration...","Step &&Over","Step &&Into","Step O&&ut","&&Continue","Toggle &&Breakpoint","&&Conditional Breakpoint...","Inline Breakp&&oint","&&Function Breakpoint...","&&Logpoint..."
-			,"&&New Breakpoint","Enable All Breakpoints","Disable A&&ll Breakpoints","Remove &&All Breakpoints","&&Install Additional Debuggers...","Minimize","Zoom","Bring All to Front","Switch &&Window...","Show Previous Tab"
-			,"Show Next Tab","Move Tab to New Window","Merge All Windows","&&Toggle Developer Tools","Accessibility &&Options","Open &&Process Explorer","Report &&Issue","&&Welcome","&&Interactive Playground","&&Documentation"
-			,"&&Release Notes","&&Keyboard Shortcuts Reference","Introductory &&Videos","&&Tips and Tricks","&&Join us on Twitter","&&Search Feature Requests","View &&License","&&Privacy Statement","&&About","&&Run Task..."
-			,"Run &&Build Task...","Show Runnin&&g Tasks...","R&&estart Running Task...","&&Terminate Task...","&&Configure Tasks...","Configure De&&fault Build Task...","Accessibility Options","Check for Updates..."
-			,"Checking For Updates...","Download Available Update","Downloading Update...","Install Update...","Installing Update...","Restart to Update..."
-			]
+			,"File &&Icon Theme"
+			,"&&Preferences"
+			,"&&Reopen Closed Editor"
+			,"&&More..."
+			,"&&Clear Recently Opened"
+			,"&&Undo"
+			,"&&Redo"
+			,"Cu&&t"
+			,"&&Copy"
+			,"&&Paste"
+			,"&&Undo"
+			,"&&Redo"
+			,"Cu&&t"
+			,"&&Copy"
+			,"&&Paste"
+			,"&&Find"
+			,"&&Replace"
+			,"Find &&in Files"
+			,"Replace &&in Files"
+			,"Emmet: E&&xpand Abbreviation"
+			,"E&&mmet..."
+			,"&&Toggle Line Comment"
+			,"Toggle &&Block Comment"
+			,"Switch to Alt+Click for Multi-Cursor"
+			,"Switch to Cmd+Click for Multi-Cursor"
+			,"Switch to Ctrl+Click for Multi-Cursor"
+			,"Přidat Kurzor Nahorů"/*,"&&Add Cursor Above"*/
+			,"Přidat kurzor Dolů"/*,"A&&dd Cursor Below"*/
+			,"Přidejte Kurzory na Konce Řádků"/*,"Add C&&ursors to Line Ends"*/
+			,"Přidat Další Výskyt"/*,"Add &&Next Occurrence"*/
+			,"Přidat Předchozí Výskyt"/*,"Add P&&revious Occurrence"*/
+			,"Vybrat všechny Výskyty"/*,"Select All &&Occurrences"*/
+			,"&&Copy Line Up"
+			,"Co&&py Line Down",
+			"Mo&&ve Line Up",
+			"Move &&Line Down","&&Select All","&&Select All","&&Expand Selection"
+			,"&&Shrink Selection","&&Explorer","&&Search","S&&CM","&&Debug"
+			,"E&&xtensions","&&Output","De&&bug Console","&&Integrated Terminal"
+			,"&&Problems"
+			,"Příkazová Paleta..."/*,"&&Command Palette..."*/
+			,"Otevři Pohled..."/*,"&&Open View..."*/
+			,"Přepnout na Celou Obrazovku"/*,"Toggle &&Full Screen"*/
+			,"Přepnout Zen Režim"/*,"Toggle Zen Mode"*/
+			,"Toggle Centered Layout","Toggle Menu &&Bar"
+			,"Split &&Editor","Toggle Editor Group &&Layout","&&Toggle Side Bar"
+			,"&&Move Side Bar Right","&&Move Side Bar Left"
+			,"Toggle &&Panel","&&Hide Status Bar","&&Show Status Bar","Hide &&Activity Bar","Show &&Activity Bar"
+			,"Toggle &&Word Wrap","Toggle &&Minimap","Toggle &&Render Whitespace","Toggle &&Control Characters"
+			,"&&Zoom In"
+			,"Zoom O&&ut","&&Reset Zoom","&&Back","&&Forward"
+			,"&&Next Editor","&&Previous Editor","&&Next Used Editor in Group"
+			,"&&Previous Used Editor in Group","Switch &&Editor","&&First Group","&&Second Group","&&Third Group"
+			,"&&Next Group","&&Previous Group","Switch &&Group","Go to &&File...","Go to &&Symbol in File..."
+			,"Go to Symbol in &&Workspace...","Go to &&Definition"
+			,"Go to &&Type Definition","Go to &&Implementation","Go to &&Line..."
+			,"&&Start Debugging","Start &&Without Debugging","&&Stop Debugging","&&Restart Debugging"
+			,"Open &&Configurations","Add Configuration...","Step &&Over"
+			,"Step &&Into","Step O&&ut","&&Continue","Toggle &&Breakpoint"
+			,"&&Conditional Breakpoint...","Inline Breakp&&oint","&&Function Breakpoint...","&&Logpoint..."
+			,"&&New Breakpoint"
+			,"Enable All Breakpoints","Disable A&&ll Breakpoints"
+			,"Remove &&All Breakpoints","&&Install Additional Debuggers..."
+			,"Minimize","Zoom","Bring All to Front","Switch &&Window...","Show Previous Tab"
+			,"Show Next Tab"
+			,"Move Tab to New Window","Merge All Windows","&&Toggle Developer Tools","Accessibility &&Options"
+			,"Open &&Process Explorer","Report &&Issue","&&Welcome","&&Interactive Playground","&&Documentation"
+			,"&&Release Notes"
+			,"&&Keyboard Shortcuts Reference","Introductory &&Videos","&&Tips and Tricks","&&Join us on Twitter"
+			,"&&Search Feature Requests","View &&License","&&Privacy Statement","&&About","&&Run Task..."
+			,"Run &&Build Task..."
+			,"Show Runnin&&g Tasks...","R&&estart Running Task...","&&Terminate Task...","&&Configure Tasks..."
+			,"Configure De&&fault Build Task...","Accessibility Options","Check for Updates..."
+			,"Checking For Updates..."
+			,"Download Available Update"
+			,"Downloading Update..."
+			,"Install Update..."
+			,"Installing Update..."
+			,"Restart to Update..."
+		]
 		,"vs/code/electron-main/window":["You can still access the menu bar by pressing the Alt-key."]
 		,"vs/code/electron-main/windows":[
 			"OK","Path does not exist"
@@ -106,8 +169,8 @@ define(
 			,"&&Reopen"
 			,"&&Close","The window has crashed"
 			,"We are sorry for the inconvenience! You can reopen the window to continue where you left off."
-			,"Open"
-			,"Open Folder"
+			,"Otevřít"/*,"Open"*/
+			,"Otevřít Složku"/*,"Open Folder"*/
 			,"Otevřít Soubor"/*,"Open File"*/
 			,"OK","Unable to save workspace '{0}'"
 			,"The workspace is already opened in another window. Please close that window first and then try again."
@@ -122,7 +185,14 @@ define(
 			,"Save Workspace"
 		]
 		,"vs/platform/configuration/common/configurationRegistry":[
-			"Default Configuration Overrides","Configure editor settings to be overridden for {0} language.","Configure editor settings to be overridden for a language.","Cannot register '{0}'. This matches property pattern '\\\\[.*\\\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.","Cannot register '{0}'. This property is already registered."],"vs/platform/dialogs/common/dialogs":["...1 additional file not shown","...{0} additional files not shown"],"vs/platform/dialogs/node/dialogService":["Cancel"]
+			"Default Configuration Overrides"
+			,"Configure editor settings to be overridden for {0} language."
+			,"Configure editor settings to be overridden for a language."
+			,"Cannot register '{0}'. This matches property pattern '\\\\[.*\\\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution."
+			,"Cannot register '{0}'. This property is already registered."
+		]
+		,"vs/platform/dialogs/common/dialogs":["...1 additional file not shown","...{0} additional files not shown"]
+		,"vs/platform/dialogs/node/dialogService":["Cancel"]
 		,"vs/platform/environment/node/argv":[
 			"Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`."
 			,"Compare two files with each other."
